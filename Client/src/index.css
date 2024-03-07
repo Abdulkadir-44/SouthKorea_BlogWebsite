@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #234;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@layer components{
+    /* Header'da bulunan Link elementlerime özellik verirken kod tekrarı olmasın diye apply komutunu kullandım */
+    .link-primary{
+        @apply hover:bg-red-700 px-4 py-2  rounded-md duration-150
+    }
+
+    .card-style{
+        @apply rounded-lg grayscale-65 hover:grayscale-0 cursor-pointer hover:-translate-y-1 duration-150 
+    }
+
+    .h1-style{
+        @apply font-bold text-gray-600 group-hover:text-black  bg-white inline-flex px-3 py-1 
+    }
+
+    .p-style{
+        @apply text-xs px-4 bg-black  text-gray-300 group-hover:text-white   bg-opacity-45 absolute bottom-0 rounded-lg
+    }
+}
+
+
