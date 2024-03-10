@@ -43,6 +43,11 @@
     .p-style{
         @apply text-xs px-4 bg-black  text-gray-300 group-hover:text-white   bg-opacity-45 absolute bottom-0 rounded-lg
     }
+
+    .businessBg{
+        background-image: url("./assets//business.svg");
+        background-size: cover;
+    }
 }
 
 
